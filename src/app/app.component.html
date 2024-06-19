@@ -1,0 +1,196 @@
+<body class="background" (mousemove)="onMouseMove($event)">
+  <div class="row">
+    <div class="col-md-5">
+      <div id="nav-option" class="d-flex flex-column gap-2 nav-option-scrollspy text-center">
+        <!-- Titles -->
+        <article class="titles">
+          <h1> {{text}} </h1>
+          <h6>FullStack Developer | <span id="bold">Systems Analyst</span></h6>  
+        </article>
+  
+        <!-- Nav links -->
+        <a href="#about" class="nav-link" (click)="scrollToSection('about')" [class.active]="currentSection == 'about'">ABOUT</a>
+        <a href="#projects" class="nav-link" (click)="scrollToSection('projects')" [class.active]="currentSection == 'projects'">PROJECTS</a>
+        <a href="#skills" class="nav-link" (click)="scrollToSection('skills')" [class.active]="currentSection == 'skills'">SKILLS</a>
+        <a href="#contact" class="nav-link" (click)="scrollToSection('contact')" [class.active]="currentSection == 'contact'">CONTACT</a> 
+ 
+        
+        <!-- Social Media section -->
+        <article class="social">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link"  href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+    <!-- Right Column -->
+    <div class="col-md-7">
+      <article class="right-col" >
+        <div data-bs-spy="scroll" data-bs-target="#nav-option" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" >
+
+          <!-- About Section -->
+          <section class="about section" id="about">
+            <p class="description" >FullStack Developer with a solid academic formation in Programming. <span class="bold">Graduate in Technical Degree in Systems Analyst</span>.</p>
+            <p class="description"> I am looking for opportunities to apply my technical skills and contribute to the
+            development of innovative and effective solutions. 
+            Excellent problem solving skills and ability to quickly learn new technologies. I have the capacity to create a software from its creation, 
+            because i learned requirements analysis, and every diagrams we need to build the software and then develop it in code.
+            </p>
+            <p class="description">Good teamwork skills, effective communication, and ability to collaborate in multidisciplinary environments. 
+            Commitment to continuous improvement and professional development, 
+            looking for opportunities to expand my knowledge and skills.</p> 
+          </section>
+                
+            <!-- Projects -->
+          <section class="projects section" id="projects">
+            <!-- Project 1 -->
+            <div class="d-flex position-relative mt-5 project-card">
+              <img src="../assets/savealife.png" class="flex-shrink-0 me-3 photo" alt="...">
+              <div>
+                <h5 class="mt-0 project-title">Save a Life <a href="https://github.com/sebipatitucci/proyectopracticas" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h5>
+                <p class="project-description">In this website you can report different events like fires, crashes, violence, accidents and more. You can see a heat map with the areas where the most complaints were made. Only a registered users can report. </p>
+                <span class="badge rounded-pill">HTML</span>
+                <span class="badge rounded-pill">CSS</span>
+                <span class="badge rounded-pill">PHP</span>
+                <span class="badge rounded-pill">MySQL</span>
+                <span class="badge rounded-pill">JavaScript</span>              
+                <span class="badge rounded-pill">JQuery</span>              
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="d-flex position-relative mt-5 project-card">
+              <img src="../assets/crudangular.png" class="flex-shrink-0 me-3 photo" alt="...">
+              <div>
+               <h5 class="mt-0 project-title">Gym Register App<a href="https://gymregister.netlify.app" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h5>
+                <p class="project-description">You can register, edit, delete users and view details about him. </p>
+                <span class="badge rounded-pill">HTML</span>
+                <span class="badge rounded-pill">CSS</span>
+                <span class="badge rounded-pill">Angular</span>
+                <span class="badge rounded-pill">TypeScript</span>
+                <span class="badge rounded-pill">JSON Server</span>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="d-flex position-relative mt-5 project-card">
+              <img src="../assets/todoapp.png" class="flex-shrink-0 me-3 photo" alt="...">
+              <div>
+                <h5 class="mt-0 project-title">ToDo App <a href="https://tasklist-angular.netlify.app" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h5>
+                <p class="project-description">With this app you will organizate better your day and your tasks won´t be forgotten. </p>
+                <span class="badge rounded-pill">HTML</span>
+                <span class="badge rounded-pill">CSS</span>
+                <span class="badge rounded-pill">Angular</span>
+                <span class="badge rounded-pill">TypeScript</span>  
+             </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="d-flex position-relative mt-5 project-card">
+              <img src="../assets/codoacodo.png" class="flex-shrink-0 me-3 photo" alt="...">
+              <div>
+               <h5 class="mt-0 project-title">Codo a Codo<a href="https://codoacodo-landingpage.netlify.app/" class="link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></h5>
+                <p class="project-description">Landing page with no funcionality, just to learn how to design a page.</p>
+                <span class="badge rounded-pill">HTML</span>
+                <span class="badge rounded-pill">CSS</span>
+                <span class="badge rounded-pill">JavaScript</span>
+              </div>
+            </div> 
+          </section>
+
+         <!-- Skills -->
+          <section class="skills section" id="skills">
+            <div class="row">
+              <div class="col-md-3">
+                <i class="fa-brands fa-html5 skill-icon"></i>
+              </div>
+              <div class="col-md-3">
+                <i class="fa-brands fa-css3-alt skill-icon"></i>
+              </div>
+              <div class="col-md-3">
+                <i class="fa-brands fa-js skill-icon"></i>
+              </div>
+              <div class="col-md-3">
+                <i class="fa-brands fa-php skill-icon"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <i class="fa-brands fa-java skill-icon"></i>
+              </div>
+              <div class="col-md-3">
+                <i class="fa-brands fa-angular skill-icon"></i>
+              </div>
+              <div class="col-md-3">
+                <i class="fa-solid fa-database skill-icon"></i>
+              </div>
+              <div class="col-md-3">
+                <i><img src="../assets/icons8-typescript-96 (3).png" alt="" class="skill-icon ts-icon"></i>
+              </div>
+            </div>
+          </section>
+
+          <!-- Contact -->
+          <section class="contact section" id="contact">
+            <div class="contact-box">
+              <form [formGroup]="registrationForm" (ngSubmit)="sendEmail($event)" autocomplete="off">
+                <div class="mb-3">
+                  <label for="from_name" class="form-label">Name</label>
+                  <input [ngClass]="{
+                    'is-invalid':
+                      hasErrors('name', 'required') || hasErrors('name', 'minlength')
+                  }"  type="text" name="from_name" class="form-control" id="name" placeholder="Name" autocomplete="off" formControlName="name">
+                  <div class="text-danger" *ngIf="hasErrors('name', 'required')">
+                    Name required
+                  </div>
+                  <div class="text-danger" *ngIf="hasErrors('name', 'minlength')">
+                    Name required at least 3 characters
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="email_id" class="form-label">Email</label>
+                  <input [ngClass]="{
+                    'is-invalid':
+                      hasErrors('email', 'required') || hasErrors('email', 'email')
+                  }" type="email" name="email_id" class="form-control" id="email" placeholder="name@example.com" autocomplete="off" formControlName="email">
+                  <div class="text-danger" *ngIf="hasErrors('email', 'required')">
+                    Email required
+                  </div>
+                  <div class="text-danger" *ngIf="hasErrors('email', 'email')">
+                  Invalid format
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea [ngClass]="{
+                    'is-invalid':
+                      hasErrors('message', 'required') || hasErrors('message', 'minlength')
+                  }" class="form-control" name="message" id="message" rows="5" placeholder="Type your message here..." autocomplete="off" formControlName="message"></textarea>
+                  <div class="text-danger" *ngIf="hasErrors('message', 'required')">
+                    Message required
+                  </div>
+                  <div class="text-danger" *ngIf="hasErrors('message', 'minlength')">
+                    Message required at least 6 characters
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+        </div>
+      </article>
+    </div>
+  </div>
+  <!-- Div for light -->
+  <div class="light" [ngStyle]="lightStyle"></div>
+  
+</body>
